@@ -1,0 +1,17 @@
+custom-confirm-alert.css
+.transparent-background {
+    background: transparent !important;
+  }
+  
+  /* Customize the button styles */
+  .react-confirm-alert-button {
+    background: red;
+    color: white;
+  }
+  
+  /* Customize the button styles for the "No" button */
+  .react-confirm-alert-button.cancel {
+    background: green;
+    color: white;
+  }
+  

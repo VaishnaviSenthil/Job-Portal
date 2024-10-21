@@ -1,0 +1,38 @@
+.slider-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slider-card {
+    flex: 0 0 33.33%; /* 3 cards per slide */
+    transition: transform 1s;
+  }
+  
+  .card-content {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    33.33% {
+      transform: translateX(-100%);
+    }
+    66.66% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .slider-container {
+    animation: slide 6s linear infinite; /* 2 seconds per slide, 3 cards */
+    white-space: nowrap;
+  }
+  

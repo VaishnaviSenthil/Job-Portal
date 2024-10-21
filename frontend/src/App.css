@@ -1,0 +1,72 @@
+.form_style {
+  position: relative;
+  outline: 0px;
+  margin: auto;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: rgb(255, 255, 255);
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: rgb(231, 235, 240);
+  border-image: initial;
+  width: 45%;
+}
+
+.border-style {
+  border-radius: 10px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+/* Define the slider container with gaps and slide animation */
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Style the container for cards */
+.card-container {
+  display: flex;
+  animation: slide 20s linear infinite;
+  gap: 4px; /* Adjust the slide speed as needed */
+}
+
+/* Style each slider card */
+.slider-card {
+  flex: 0 0 calc(25% - 16px); /* Increase the width to 20% */
+  transition: transform 30s linear;
+  width: 100%; /* Make the cards full width */
+  max-width: calc(40% - 16px); /* Limit card width to 20% minus the gap */
+  box-sizing: border-box;
+
+}
+
+/* Style the content within each card */
+.card-content {
+  padding: 16px;
+  border: 4px solid #0277BD; 
+  background-color: #FFFFFF; 
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100% );
+  }
+}
+
+
+.content-container {
+  width: 100%;
+  
+}

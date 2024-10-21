@@ -1,0 +1,12 @@
+.custom-header {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .custom-column {
+    font-size: 10px;
+  }
+
+  .custom-button {
+    max-width: 50px; /* Adjust the max-width to your desired width */
+  }
